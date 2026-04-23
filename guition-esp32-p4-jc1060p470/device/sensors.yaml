@@ -2,8 +2,8 @@ sensor:
 
   # Header Outdoor Temperate
   - platform: homeassistant
-    entity_id: sensor.office_temperature
-    id: office_temperature
+    entity_id: sensor.hive_current_temperature
+    id: hive_current_temperature
     on_value:
       - lvgl.label.update:
           id: temperatures
@@ -19,7 +19,7 @@ sensor:
           id: temperatures
           text:
             format: "%d° / %d°"
-            args: [ '(int)round(x)', '(int)round(id(office_temperature).state)' ]
+            args: [ '(int)round(x)', '(int)round(id(hive_current_temperature).state)' ]
 
   # Office Blind Position
   - platform: homeassistant
