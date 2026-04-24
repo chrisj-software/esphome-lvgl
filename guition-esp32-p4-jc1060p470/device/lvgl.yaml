@@ -29,7 +29,7 @@ lvgl:
       # Wifi Strength
       - label:
           text: "----"
-          id: wifi_strength
+          id: wifi_signal_db
           text_font: clockbar_font
           align: top_right
           x: 0
